@@ -209,7 +209,7 @@ if __name__ == "__main__":
 
     for y, row in enumerate(maze_layout):
         for x, char in enumerate(row):
-            if char == '1': obstacles.add((x, y))
+            if char == '#': obstacles.add((x, y))
             elif char == 'S': start = (x, y)
             elif char == 'G': goal = (x, y)
 
